@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-25: #4f46e5;
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-600: #4f46e5;
+
+  --color-mint-50: #ecfdf5;
+  --color-mint-600: #059669;
+
+  --color-rose-50: #fff1f2;
+  --color-rose-600: #e11d48;
+
+  --color-sky-50: #eff6ff;
+  --color-sky-600: #0284c7;
+
+  --radius-lg: 0.75rem;
+}
+
+:root {
+  color-scheme: light;
+}
+body {
+  @apply bg-gray-50 text-gray-900 antialiased;
+}
+.container-xl {
+  @apply max-w-7xl mx-auto px-4;
+}
+.section-pad {
+  @apply py-10;
+}
+
+.ui-card {
+  @apply rounded-xl bg-white shadow-sm;
+}
+.ui-card:hover {
+  @apply shadow-md;
+}
+.ui-card-soft {
+  @apply bg-primary-50;
+}
+
+.ui-field {
+  @apply h-11 w-full rounded-lg bg-white border border-gray-200
+         px-3 text-[0.95rem] leading-none placeholder:text-gray-400
+         outline-none transition;
+}
+.ui-field:focus {
+  @apply border-gray-300 ring-2 ring-gray-900/5;
+}
+
+.ui-select {
+  @apply h-11 w-full rounded-lg bg-white cursor-pointer border border-gray-200
+         px-3 text-[0.95rem] leading-none outline-none transition
+         appearance-none bg-no-repeat pr-8;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5l5 5 5-5' stroke='%236b7280' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-position: right 0.75rem center;
+}
+.ui-select:focus {
+  @apply border-gray-300 ring-2 ring-gray-900/5;
+}
+
+.ui-btn {
+  @apply inline-flex items-center justify-center h-11 px-4 rounded-lg cursor-pointer
+         bg-primary-600 text-white text-sm font-medium
+         hover:opacity-95 active:opacity-90 transition;
+}
+.ui-btn-ghost {
+  @apply inline-flex items-center justify-center h-11 px-3 rounded-lg cursor-pointer
+         text-gray-700 text-sm font-medium
+         border border-gray-200 hover:bg-gray-50 transition;
+}
+
+.chip {
+  @apply inline-flex items-center gap-1 text-xs px-2 py-1 rounded-full;
+}
+.chip-mint {
+  @apply bg-mint-50 text-mint-600;
+}
+.chip-rose {
+  @apply bg-rose-50 text-rose-600;
+}
+.chip-sky {
+  @apply bg-sky-50  text-sky-600;
+}
+
+.card {
+  @apply rounded-xl overflow-hidden bg-white shadow-sm transition;
+}
+.card:hover {
+  @apply shadow-md;
+}
+
+.nav-link {
+  @apply hover:text-gray-900 text-gray-600 transition;
+}
+.nav-link-active {
+  @apply text-gray-900 relative;
+}
+.nav-link-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  background: var(--color-primary-600);
+  border-radius: 999px;
+}
+
+.label {
+  @apply block text-[0.8rem] font-medium text-gray-700 mb-1;
+}
+.req {
+  @apply text-rose-600;
+}
+.helper {
+  @apply text-[0.75rem] text-gray-500 mt-1;
+}
+.error {
+  @apply text-[0.75rem] text-rose-600 mt-1;
+}
+.ui-field-invalid {
+  @apply border-rose-300 ring-2 ring-rose-100;
+}
+
+/* theme scopes you can apply to any wrapper */
+.theme-mint {
+  --color-primary-50: var(--color-mint-50);
+  --color-primary-600: var(--color-mint-600);
+}
+.theme-rose {
+  --color-primary-50: var(--color-rose-50);
+  --color-primary-600: var(--color-rose-600);
+}
+.theme-sky {
+  --color-primary-50: var(--color-sky-50);
+  --color-primary-600: var(--color-sky-600);
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "key": "group_services_fields",
+    "title": "Service Fields",
+    "fields": [
+      {
+        "key": "field_service_price",
+        "label": "Price",
+        "name": "price",
+        "type": "text",
+        "instructions": "e.g. $129"
+      },
+      {
+        "key": "field_service_category",
+        "label": "Category",
+        "name": "category",
+        "type": "text",
+        "instructions": "e.g. Massage, Facial, Therapy"
+      },
+      {
+        "key": "field_service_description",
+        "label": "Description",
+        "name": "description",
+        "type": "textarea",
+        "rows": 4
+      }
+    ],
+    "location": [
+      [{ "param": "post_type", "operator": "==", "value": "services" }]
+    ],
+    "position": "normal",
+    "style": "default",
+    "active": true
+  }
+]

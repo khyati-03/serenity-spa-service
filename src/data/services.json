@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Aromatherapy Massage",
+    "description": "Soothing full-body massage with essential oils for deep relaxation.",
+    "price": "$99",
+    "image": "https://images.unsplash.com/photo-1556228453-efd1cebb5f39",
+    "category": "Massage"
+  },
+  {
+    "id": 2,
+    "title": "Deep Tissue Massage",
+    "description": "Targets deeper muscle layers to relieve chronic tension and pain.",
+    "price": "$129",
+    "image": "https://images.unsplash.com/photo-1552693673-1bf958298935",
+    "category": "Massage"
+  },
+  {
+    "id": 3,
+    "title": "Hydrating Facial",
+    "description": "Restores moisture balance and glow with a custom skincare routine.",
+    "price": "$89",
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03",
+    "category": "Facial"
+  },
+  {
+    "id": 4,
+    "title": "Hot Stone Therapy",
+    "description": "Warm basalt stones ease muscle stiffness and improve circulation.",
+    "price": "$139",
+    "image": "https://images.unsplash.com/photo-1519824145371-296894a0daa9",
+    "category": "Therapy"
+  }
+]
